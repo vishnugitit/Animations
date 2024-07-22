@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .Cointainer{
+            perspective: 100px;
+        }
+    
+      .Box {
+        margin-top: 50px;
+        margin-left: 20px;
+        border: 2px solid black;
+        background-color: violet;
+        width: 150px;
+        height: 150px;
+      }
+      #Transulatex:checked ~ .Box {
+        background-color: yellow;
+        transform: translateX(60px);
+        transition: all 3s;
+       transition-timing-function: linear;
+      }
+      #Transulatey:checked ~ .Box {
+        background-color: yellow;
+        transform: translateY(40px);
+        transition: all 3s;
+        transition-timing-function: ease;
+      }
+      #Transulate:checked ~ .Box {
+        background-color: yellow;
+        transform: translateX(60px) translateY(40px);
+        transition: all 3s;
+      }
+      #Scalex:checked ~ .Box {
+        background-color: blue;
+        transform: scalex(2);
+        transition: all 3s;
+      }
+      #Scaley:checked ~ .Box {
+        background-color: blue;
+        transform: scaley(2);
+        transition: all 3s;
+      }
+      #Scale:checked ~ .Box {
+        background-color: blue;
+        transform: scalex(2) scaleY(2);
+        transition: all 3s;
+      }
+      #Skewx:checked ~ .Box {
+        transform: skewX(360deg);
+        background-color: green;
+        transition: all 3s;
+      }
+      #Skewy:checked ~ .Box {
+        transform:  skewY(180deg);
+        background-color: green;
+        transition: all 3s;
+      }
+      #Skew:checked ~ .Box {
+        transform: skewX(360deg) skewY(180deg);
+        background-color: green;
+        transition: all 3s;
+       
+      }
+      #Rotatex:checked ~ .Box {
+        background-color: chartreuse;
+        transform: rotatex(360deg);
+        transition: all 4s;
+       
+      }
+      #Rotatey:checked ~ .Box {
+        background-color: chartreuse;
+        transform: rotatey(360deg);
+        transition: all 4s;
+       
+      }
+      #Rotate:checked ~ .Box {
+        background-color: chartreuse;
+        transform: Rotate(360deg);
+        transition: all 4s;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transforms</h1>
+    <div class="cointainer">
+      <input type="radio" id="Transulatex" name="Transforms" />Transulatex
+      <input type="radio" id="Transulatey" name="Transforms" />Transulatey
+      <input type="radio" id="Transulate" name="Transforms" />Transulate
+      <input type="radio" id="Scalex" name="Transforms" />Scalex
+      <input type="radio" id="Scaley" name="Transforms" />Scaley
+      <input type="radio" id="Scale" name="Transforms" />Scale
+      <input type="radio" id="Skewx" name="Transforms" />Skewx
+      <input type="radio" id="Skewy" name="Transforms" />Skewy
+      <input type="radio" id="Skew" name="Transforms" />Skew
+      <input type="radio" id="Rotatex" name="Transforms" />Rotatex
+      <input type="radio" id="Rotatey" name="Transforms" />Rotatey
+      <input type="radio" id="Rotate" name="Transforms" />Rotate
+      <div class="Box">
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img{
+        width: 100px;
+        height: 100px;
+    } 
+        .Cointainer{
+            margin-top: 10px;
+            margin-left: 40px;
+            position: relative;
+        }
+
+       hr{
+        border: 2px solid black;
+        margin-top: 100px;
+       } 
+
+       .Toolgate{
+      position: relative;
+       }
+
+        .Border{
+        border: 2px solid white;
+       background-color: black;
+        width: 5px;
+        height: 1650px;
+        position: absolute;
+        top: -1890px;
+        left: 600px; 
+         }  
+         
+    @keyframes lane1 {
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(450px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translate(450px);
+      }
+      100%{
+        transform: translatex(1200px);
+      }
+    }
+
+    @keyframes lane1A {
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(450px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translate(450px);
+      }
+      100%{
+        transform: translatex(1200px);
+      }
+    }
+
+    @keyframes lane1a {
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(450px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translate(450px);
+      }
+      100%{
+        transform: translatex(1200px);
+      }
+    }
+
+    @keyframes lane2{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(450px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(450px);   
+      }
+      100%{
+        transform:translatex(1200px)
+      }
+    }
+
+    @keyframes lane2A{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(450px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(450px);   
+      }
+      100%{
+        transform:translatex(1200px)
+      }
+    }
+
+    @keyframes lane2a{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(450px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(450px);   
+      }
+      100%{
+        transform:translatex(1200px)
+      }
+    }
+
+    @keyframes lane3A{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(650px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(650px);   
+      }
+      100%{
+        transform:translatex(1200px);
+      }
+
+    }
+    @keyframes lane3{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(650px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(650px);   
+      }
+      100%{
+        transform:translatex(1200px);
+      }
+
+    }
+    @keyframes lane3a{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(650px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(650px);   
+      }
+      100%{
+        transform:translatex(1200px);
+      }
+
+    }
+
+    @keyframes lane4{
+      0%{
+        transform: translatex(0px);
+      
+        
+      }
+      50%{
+        transform: translatex(650px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(650px);  
+        animation-play-state: paused;
+        animation-delay: 10s;
+       
+      }
+      100%{
+       
+        transform:translatex(1200px)
+
+      }
+    }
+    @keyframes lane4A{
+      0%{
+        transform: translatex(0px);
+      }
+      50%{
+        transform: translatex(650px);
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(650px);   
+      }
+      100%{
+        transform:translatex(1200px)
+      }
+    }
+    @keyframes lane4a{
+      0%{
+        transform: translatex(0px);
+       
+     
+       
+      }
+      50%{
+        transform: translatex(650px);
+      
+        animation-play-state: paused;
+        animation-delay: 10s;
+      }
+      75%{
+        transform: translatex(650px); 
+       
+      }
+      100%{
+        transform:translatex(1200px)
+      }
+    }
+     
+      #Ambulance{ 
+       animation: lane1 10s ease-out infinite;
+           } 
+    
+     #CarA{
+      animation: lane1A 10s ease-in infinite;
+     }
+     #CarB{
+      animation: lane1a 10s linear infinite;
+     }
+
+     #Car2{
+    animation: lane2 10s ease-in-out infinite;
+   } 
+   #Car2A{
+    animation: lane2A 10s linear infinite;
+   } 
+   #Car2B{
+    animation: lane2a 10s ease-out infinite;
+   } 
+
+
+     #Car1{
+     animation: lane3 10s linear infinite reverse forwards;
+     
+     }
+     #Car1A{
+     animation: lane3A 10s ease-in  infinite reverse forwards;
+     
+     }
+     #Car1a{
+     animation: lane3a 10s ease-out infinite reverse forwards;
+     
+     }
+
+  #Lorry1{
+   animation: lane4 10s ease-in-out infinite reverse forwards;
+    
+  } 
+  #Lorry1A{
+    animation: lane4A 10s linear infinite reverse forwards;
+  }
+  #Lorry1a{
+    animation: lane4a 10s ease-in infinite reverse forwards;
+  }
+
+
+  #CarA{
+    display: block;
+  }
+  #CarB{
+    display: block;
+  }
+
+  #Car2A{
+    display:block;
+  }
+  #Car2B{
+    display:block;
+  }
+
+  #Car1A{
+    display: block;
+  }
+  #Car1a{
+    display: block;
+  }
+
+
+#Lorry1A{
+  display: block;
+}
+#Lorry1a{
+  display: block;
+}
+.Road1{
+  position: absolute;
+width: 1600px;
+height: 400px;
+}
+#Lorr1a{
+  height: 250px;
+  width: 150px;
+}
+     .Light
+     {
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-evenly;
+      width: 200px;
+      height: 100px;
+      margin: 30px 450px;
+     }
+     h1{
+      border: 2px solid black;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+     }
+     @keyframes Signal1{
+     0%{
+      background-color: azure;
+     }
+     50%{
+      background-color: red; 
+     }
+    60%{
+      background-color:white;
+    }
+    100%{
+      background-color: white;
+    }
+     } 
+    @keyframes Signal2{
+      0%{
+      background-color: azure;
+     }
+     60%{
+      background-color: orange;
+     }
+    75%{
+      background-color:white;
+    }
+    100%{
+      background-color: white;
+    }
+    }
+     @keyframes Signal3{
+      0%{
+      background-color: azure;
+     }
+     50%{
+      background-color: white;
+     
+     }
+    75%{
+      background-color:green;
+      animation-play-state: paused;
+      animation-delay: 5s;
+    }
+    100%{
+      background-color: white;
+     }
+    }
+     .reda{
+      animation: Signal1 10s linear infinite;
+     }
+     .orangeb{
+      animation: Signal2 10s linear infinite;
+     }
+     .greenc{
+      animation: Signal3 10s linear infinite;
+     }
+     @keyframes Signal1A{
+     0%{
+      background-color: azure;
+     }
+     30%{
+      background-color: red; 
+     }
+    40%{
+      background-color:white;
+    }
+    100%{
+      background-color: white;
+    }
+     }
+    
+     @keyframes Signal2A{
+      0%{
+      background-color: azure;
+     }
+     40%{
+      background-color: orange;
+     }
+    50%{
+      background-color:white;
+    }
+    100%{
+      background-color: white;
+    }
+    }
+     @keyframes Signal3A{
+      0%{
+      background-color: azure;
+     }
+     40%{
+      background-color: white;
+     
+     }
+    50%{
+      background-color:green;
+      animation-play-state: paused;
+      animation-delay: 5s;
+    }
+    100%{
+      background-color: white;
+     }
+    }
+   
+    .red1{
+      animation: Signal1A 10s linear infinite;
+     }
+     .orange1{
+      animation: Signal2A 10s linear infinite;
+     }
+     .green1{
+      animation: Signal3A 10s linear infinite;
+     }
+       /* @keyframes Signal1{
+     0%{
+      background-color: azure;
+     }
+     50%{
+      background-color: red; 
+     }
+    60%{
+      background-color: orange;
+    }
+    75%{
+      background-color: green;
+    }
+    100%{
+      background-color: white;
+    }
+     } */
+       /* @keyframes Signal1A{
+     0%{
+      background-color: azure;
+     }
+     30%{
+      background-color: red; 
+     }
+    40%{
+      background-color: orange;
+    }
+    50%{
+      background-color: green;
+    }
+    100%{
+      background-color: white;
+    }
+     } */
+    </style>
+</head>
+<body>
+  
+    <div class="Cointainer">
+      <hr id="Lane5">
+      <div class="Light">
+        <h1 class="reda"></h1>
+        <h1 class="orangeb"></h1>
+        <h1 class="greenc"></h1>
+        
+      </div>
+     
+     <hr id="Lane1">
+     <img class="Road1" src="./road.png">
+      <img id="Ambulance" src="./sf1.png">
+      <img id="CarA" src="./trolley.png">
+      <img id="CarB" src="./ln3.png">
+
+      <hr id="Lane2">
+      <img class="Road1" src="./road.png">
+      <img id="Car2" src="./cch.png">
+      <img id="Car2A" src="./ln2.png">
+      <img id="Car2B" src="./lorry2.png">
+
+
+      <hr id="Lane3">
+      <img class="Road1" src="./road.png">
+      <img id="Car1" src="./bg1.png">
+      <img id="Car1A" src="./ccc.png">
+      <img id="Car1a" src="./rev2.png">
+      
+
+
+      <hr id="Lane4">
+      <img class="Road1" src="./road.png">
+      <img id="Lorry1" src="./lorry1rev.png">
+      <img id="Lorry1A" src="./lnr.png">
+      <img id="Lorry1a" src="./land.png">
+      <hr id="Lane5">
+     
+        <div class="Light">
+          <h1 class="red1"></h1>
+          <h1 class="orange1"></h1>
+          <h1 class="green1"></h1>
+          
+        </div>
+
+   
+    <div class="Toolgate">
+      <div class="Border"></div>
+      <hr class="label">
+    </div>
+</body>
+</html>
